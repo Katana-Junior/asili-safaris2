@@ -19,15 +19,16 @@ const Home = () => {
         </div>
         <div className="home-card">
           <h2 className="home-description">ASILI SAFARIS, KENYA</h2>
-          <p>
+          <p className="home-intro">
             Jambo,welcome to Kenya,a land beauty,adventure and unforgetable
             experiences.Travel with us and explore the wonders of Kenya, from
             the vast savannahs to the majestic mountains,from the rich culture
             to the diverse wildlife and beautiful beaches. Join us for a journey
             of a lifetime and create memories that will last forever.
           </p>
-          <p>"Lets explore beyond our imaginations"</p>
+          <p className="home-quote">"Lets explore beyond our imaginations"</p>
         </div>
+        <villas />
       </div>
     </>
   );

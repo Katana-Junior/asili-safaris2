@@ -57,3 +57,28 @@ body {
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.home-description {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home-intro {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home-quote {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
