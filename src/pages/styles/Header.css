@@ -39,6 +39,12 @@
   font-weight: 600;
   text-decoration: none;
 }
+.vav-link {
+  color: #222;
+  font-weight: 600;
+  margin-right: 20px;
+  font-size: 50px;
+}
 
 .header-navigation a:hover {
   text-decoration: underline;

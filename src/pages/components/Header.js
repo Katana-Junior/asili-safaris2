@@ -10,10 +10,18 @@ const Header = () => {
         <img src={logo} alt="Asili Safaris Logo" className="logo" />
       </Link>
       <nav className="header-navigation" aria-label="Main navigation">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/events">Events</Link>
-        <Link to="/contacts">Contacts</Link>
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+        <Link to="/about" className="nav-link">
+          About
+        </Link>
+        <Link to="/events" className="nav-link">
+          Events
+        </Link>
+        <Link to="/contacts" className="nav-link">
+          Contacts
+        </Link>
       </nav>
       <Link className="book-now-button" to="/contacts">
         Book Now

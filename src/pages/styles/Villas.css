@@ -1,0 +1,120 @@
+.villas-section {
+  padding: 56px 6%;
+  background-color: #f7f7f3;
+}
+
+.villas-title {
+  margin: 0 0 12px;
+  color: #26382d;
+  font-size: 32px;
+  text-align: center;
+}
+
+.villas-intro {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.villas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.villa-card {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.villa-image-placeholder {
+  display: flex;
+  min-height: 190px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e5df;
+  color: #62675f;
+  font-size: 14px;
+}
+
+.villa-card-content {
+  display: flex;
+  min-height: 228px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.villa-name {
+  margin: 0 0 10px;
+  color: #26382d;
+  font-size: 20px;
+}
+
+.villa-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  color: #53644f;
+  font-weight: 600;
+}
+
+.location-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.villa-description {
+  margin: 0 0 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.villa-book-button {
+  display: inline-block;
+  margin-top: auto;
+  padding: 11px 16px;
+  border-radius: 4px;
+  background-color: #285b3a;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.villa-book-button:hover {
+  background-color: #1f472d;
+}
+
+.villa-book-button:focus-visible {
+  outline: 3px solid #d49b36;
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  .villas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .villas-section {
+    padding: 40px 20px;
+  }
+
+  .villas-title {
+    font-size: 28px;
+  }
+
+  .villas-grid {
+    grid-template-columns: 1fr;
+  }
+}
