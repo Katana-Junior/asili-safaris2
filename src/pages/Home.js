@@ -1,14 +1,10 @@
 import React from "react";
 import "./styles/Home.css";
-import logo from "../logos/asililogo.png";
+import Villas from "./Villas";
 
 const Home = () => {
   return (
-    <>
-      <div className="header">
-        <img src={logo} alt="Asili Safaris Logo" className="logo" />
-      </div>
-      <div className="home-container">
+    <div className="home-container">
         <div className="hero-section">
           <h1 className="slogan">Explore Beyond Infinity</h1>
           <p className="home-description">
@@ -28,9 +24,8 @@ const Home = () => {
           </p>
           <p className="home-quote">"Lets explore beyond our imaginations"</p>
         </div>
-        <villas />
-      </div>
-    </>
+        <Villas />
+    </div>
   );
 };
 
