@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/Home.css";
 import Villas from "./Villas";
+import Guides from "./Guides";
+import Vehicles from "./Vehicles";
 
 const Home = () => {
   return (
@@ -25,6 +27,8 @@ const Home = () => {
           <p className="home-quote">"Lets explore beyond our imaginations"</p>
         </div>
         <Villas />
+        <Guides />
+        <Vehicles />
     </div>
   );
 };

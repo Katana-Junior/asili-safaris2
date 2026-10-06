@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/Villas.css";
+import "./styles/TravelCards.css";
 
 const villas = [
   {
@@ -31,25 +31,25 @@ const villas = [
 
 const Villas = () => {
   return (
-    <section className="villas-section">
-      <h2 className="villas-title">Our Luxury Villas</h2>
-      <p className="villas-intro">
+    <section className="travel-cards-section">
+      <h2 className="travel-cards-title">Our Luxury Villas</h2>
+      <p className="travel-cards-intro">
         Experience the comfort of a private retreat, with stays chosen to bring
         you closer to Kenya's landscapes and wildlife.
       </p>
-      <div className="villas-grid">
+      <div className="travel-cards-grid">
         {villas.map((villa) => (
-          <article className="villa-card" key={villa.name}>
+          <article className="travel-card" key={villa.name}>
             <div
-              className="villa-image-placeholder"
+              className="travel-card-image-placeholder"
               role="img"
               aria-label={`Image coming soon: ${villa.name}`}
             >
               Image coming soon
             </div>
-            <div className="villa-card-content">
-              <h3 className="villa-name">{villa.name}</h3>
-              <p className="villa-location">
+            <div className="travel-card-content">
+              <h3 className="travel-card-name">{villa.name}</h3>
+              <p className="travel-card-location">
                 <svg
                   aria-hidden="true"
                   className="location-icon"
@@ -63,8 +63,8 @@ const Villas = () => {
                 </svg>
                 {villa.location}
               </p>
-              <p className="villa-description">{villa.description}</p>
-              <Link className="villa-book-button" to="/contacts">
+              <p className="travel-card-description">{villa.description}</p>
+              <Link className="travel-card-button" to="/contacts">
                 Book Now
               </Link>
             </div>
