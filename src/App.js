@@ -8,6 +8,8 @@ import Guides from "./pages/Guides";
 import About from "./pages/About";
 import Events from "./pages/Events";
 import Contacts from "./pages/Contacts";
+import Footer from "./pages/components/Footer";
+
 function App() {
   return (
     <Router>
