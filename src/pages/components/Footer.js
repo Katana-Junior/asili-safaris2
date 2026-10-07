@@ -1,11 +1,16 @@
+import React from "react";
+import "../styles/Footer.css";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-       <div className="footer-links">
-        <
+        <div className="footer-links">
+          <a href="/" className="footer-link">
+            Home
+          </a>
           <a href="/about" className="footer-link">
-            About us 
+            About us
           </a>
           <a href="/events" className="footer-link">
             Events
@@ -13,7 +18,7 @@ const Footer = () => {
           <a href="/contacts" className="footer-link">
             Contacts
           </a>
-        <a href="/villas" className="footer-link">
+          <a href="/villas" className="footer-link">
             Villas
           </a>
           <a href="/vehicles" className="footer-link">
@@ -23,7 +28,7 @@ const Footer = () => {
             Guides
           </a>
         </div>
-        <p>&copy; 2023 Asili Safaris. All rights reserved.</p>
+        <p>&copy; 2026 Asili Safaris. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -1,0 +1,15 @@
+.footer {
+  background-color: #464444;
+  color: white;
+  height: 120px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  gap: 20px;
+}
