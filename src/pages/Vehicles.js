@@ -8,24 +8,32 @@ const vehicles = [
     capacity: "Up to 6 guests",
     description:
       "A capable, comfortable choice for game drives and journeys across Kenya's varied terrain.",
+    image:
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Safari Tour Van",
     capacity: "Up to 7 guests",
     description:
       "Enjoy a roomy ride with large windows for spotting wildlife along the way.",
+    image:
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Private Transfer Vehicle",
     capacity: "Small groups",
     description:
       "Travel between the airport, your accommodation, and safari destinations with ease.",
+    image:
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Group Safari Vehicle",
     capacity: "Larger groups",
     description:
       "A practical option for group adventures, with space for passengers and safari essentials.",
+    image:
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
@@ -39,13 +47,12 @@ const Vehicles = () => (
     <div className="travel-cards-grid">
       {vehicles.map((vehicle) => (
         <article className="travel-card" key={vehicle.name}>
-          <div
-            className="travel-card-image-placeholder"
-            role="img"
-            aria-label={`Image coming soon: ${vehicle.name}`}
-          >
-            Image coming soon
-          </div>
+          <img
+            className="travel-card-image"
+            src={vehicle.image}
+            alt={vehicle.name}
+            loading="lazy"
+          />
           <div className="travel-card-content">
             <h3 className="travel-card-name">{vehicle.name}</h3>
             <p className="travel-card-location">{vehicle.capacity}</p>

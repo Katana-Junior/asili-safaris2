@@ -8,24 +8,32 @@ const villas = [
     location: "Maasai Mara",
     description:
       "Wake up to sweeping savannah views and enjoy a peaceful base for discovering Kenya's iconic wildlife.",
+    image:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Acacia Ridge Villa",
     location: "Amboseli",
     description:
       "Unwind in a tranquil retreat surrounded by open plains and unforgettable views of Mount Kilimanjaro.",
+    image:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Lake Serenity Villa",
     location: "Naivasha",
     description:
       "Relax beside the Great Rift Valley lakes and explore the area's remarkable scenery and wildlife.",
+    image:
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Coastal Breeze Villa",
     location: "Diani Beach",
     description:
       "Enjoy a laid-back coastal escape with soft white sands, ocean breezes, and time to recharge.",
+    image:
+      "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
@@ -40,13 +48,12 @@ const Villas = () => {
       <div className="travel-cards-grid">
         {villas.map((villa) => (
           <article className="travel-card" key={villa.name}>
-            <div
-              className="travel-card-image-placeholder"
-              role="img"
-              aria-label={`Image coming soon: ${villa.name}`}
-            >
-              Image coming soon
-            </div>
+            <img
+              className="travel-card-image"
+              src={villa.image}
+              alt={villa.name}
+              loading="lazy"
+            />
             <div className="travel-card-content">
               <h3 className="travel-card-name">{villa.name}</h3>
               <p className="travel-card-location">

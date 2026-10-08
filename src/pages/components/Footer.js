@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -35,7 +41,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <i className="fab fa-facebook-f"></i>
+            <FaFacebookF aria-hidden="true" />
           </a>
           <a
             href="https://www.instagram.com/AsiliSafaris"
@@ -43,15 +49,23 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <i className="fab fa-instagram"></i>
+            <FaInstagram aria-hidden="true" />
           </a>
           <a
-            href="https://twitter.com/AsiliSafaris"
+            href="https://x.com/AsiliSafaris"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
+            aria-label="X"
           >
-            <i className="fab fa-twitter"></i>
+            <FaXTwitter aria-hidden="true" />
+          </a>
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp aria-hidden="true" />
           </a>
         </div>
         <p>&copy; 2026 Asili Safaris. All rights reserved.</p>

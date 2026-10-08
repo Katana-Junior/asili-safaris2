@@ -8,24 +8,28 @@ const guides = [
     location: "Maasai Mara",
     description:
       "Make the most of every game drive with expert wildlife spotting and insight into the rhythms of the savannah.",
+    image: "guides coming soon",
   },
   {
     name: "Birding Guide",
     location: "Rift Valley Lakes",
     description:
       "Discover Kenya's remarkable birdlife, from colourful resident species to seasonal visitors.",
+    image: "guides coming soon",
   },
   {
     name: "Cultural Guide",
-    location: "Across Kenya",
+    location: "Watamu & Malindi",
     description:
       "Connect with local stories, traditions, and communities for a more meaningful journey.",
+    image: "guides coming soon",
   },
   {
     name: "Mountain Guide",
     location: "Mount Kenya",
     description:
       "Explore highland trails at your pace with support for a memorable mountain adventure.",
+    image: "guides coming soon",
   },
 ];
 
@@ -39,13 +43,12 @@ const Guides = () => (
     <div className="travel-cards-grid">
       {guides.map((guide) => (
         <article className="travel-card" key={guide.name}>
-          <div
-            className="travel-card-image-placeholder"
-            role="img"
-            aria-label={`Image coming soon: ${guide.name}`}
-          >
-            Image coming soon
-          </div>
+          <img
+            className="travel-card-image"
+            src={guide.image}
+            alt={guide.name}
+            loading="lazy"
+          />
           <div className="travel-card-content">
             <h3 className="travel-card-name">{guide.name}</h3>
             <p className="travel-card-location">
@@ -61,7 +64,7 @@ const Guides = () => (
             </p>
             <p className="travel-card-description">{guide.description}</p>
             <Link className="travel-card-button" to="/contacts">
-              Enquire About a Guide
+              Enquire Now
             </Link>
           </div>
         </article>
