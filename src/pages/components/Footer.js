@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "../styles/Footer.css";
 
@@ -66,6 +62,14 @@ const Footer = () => {
             aria-label="WhatsApp"
           >
             <FaWhatsapp aria-hidden="true" />
+          </a>
+        </div>
+        <div className="partners">
+          <a className="partner-link" href="https://www.tripadvisor.com/">
+            TripAdvisor
+          </a>
+          <a className="partner-link" href="https://www.pollmans.com/">
+            Pollman
           </a>
         </div>
         <p>&copy; 2026 Asili Safaris. All rights reserved.</p>
