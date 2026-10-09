@@ -40,4 +40,11 @@
   justify-content: center;
   gap: 20px;
   margin-top: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.partner-link {
+  color: inherit;
+  font-size: 18px;
+  text-decoration: none;
 }
