@@ -64,6 +64,7 @@ const Footer = () => {
             <FaWhatsapp aria-hidden="true" />
           </a>
         </div>
+        <div className="partner-header">Our Partners</div>
         <div className="partners">
           <a className="partner-link" href="https://www.tripadvisor.com/">
             TripAdvisor
