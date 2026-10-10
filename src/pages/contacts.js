@@ -30,6 +30,14 @@ const countries = [
   { code: "SG", name: "Singapore", dialCode: "+65" },
 ];
 
+const getCountryFlag = (countryCode) =>
+  String.fromCodePoint(
+    ...countryCode
+      .toUpperCase()
+      .split("")
+      .map((letter) => 127397 + letter.charCodeAt(0)),
+  );
+
 const Contacts = () => {
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -74,7 +82,7 @@ const Contacts = () => {
             >
               {countries.map(({ code, name, dialCode }) => (
                 <option key={code} value={code}>
-                  {name} ({dialCode})
+                  {getCountryFlag(code)} {name} ({dialCode})
                 </option>
               ))}
             </select>
@@ -83,7 +91,10 @@ const Contacts = () => {
             <label htmlFor="phone">Phone</label>
             <div className="phone-input">
               <span className="phone-country-code" aria-hidden="true">
-                {selectedCountry.dialCode}
+                <span className="phone-country-flag">
+                  {getCountryFlag(selectedCountry.code)}
+                </span>
+                <span>{selectedCountry.dialCode}</span>
               </span>
               <input
                 type="tel"
