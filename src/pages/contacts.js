@@ -42,57 +42,84 @@ const Contacts = () => {
   };
 
   return (
-    <section className="page-content">
-      <h1>Contact Asili Safaris</h1>
-      <p>Get in touch with us to plan your safari adventure.</p>
-      <form className="contact-form">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label htmlFor="country">Country:</label>
-        <select
-          id="country"
-          name="country"
-          value={selectedCountry.code}
-          onChange={handleCountryChange}
-        >
-          {countries.map(({ code, name, dialCode }) => (
-            <option key={code} value={code}>
-              {name} ({dialCode})
-            </option>
-          ))}
-        </select>
-        <label htmlFor="phone">Phone:</label>
-        <div className="phone-input">
-          <span className="phone-country-code" aria-hidden="true">
-            {selectedCountry.dialCode}
-          </span>
+    <section className="page-content contact-page">
+      <div className="contact-card">
+        <header className="contact-card-header">
+          <span className="contact-eyebrow">LET'S PLAN YOUR ADVENTURE</span>
+          <h1>Contact Asili Safaris</h1>
+          <p>Get in touch with us to plan your safari adventure.</p>
+        </header>
+        <form className="contact-form">
+          <div className="contact-field">
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div className="contact-field">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div className="contact-field">
+            <label htmlFor="country">Country</label>
+            <select
+              id="country"
+              name="country"
+              value={selectedCountry.code}
+              onChange={handleCountryChange}
+            >
+              {countries.map(({ code, name, dialCode }) => (
+                <option key={code} value={code}>
+                  {name} ({dialCode})
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="contact-field">
+            <label htmlFor="phone">Phone</label>
+            <div className="phone-input">
+              <span className="phone-country-code" aria-hidden="true">
+                {selectedCountry.dialCode}
+              </span>
+              <input
+                type="tel"
+                id="phone"
+                name="phoneNumber"
+                placeholder="Phone number"
+                autoComplete="tel-national"
+                value={phoneNumber}
+                onChange={(event) => setPhoneNumber(event.target.value)}
+                required
+              />
+            </div>
+          </div>
           <input
-            type="tel"
-            id="phone"
-            name="phoneNumber"
-            placeholder="Phone Number"
-            autoComplete="tel-national"
-            value={phoneNumber}
-            onChange={(event) => setPhoneNumber(event.target.value)}
-            required
+            type="hidden"
+            name="phone"
+            value={`${selectedCountry.dialCode}${phoneNumber}`}
           />
-        </div>
-        <input
-          type="hidden"
-          name="phone"
-          value={`${selectedCountry.dialCode}${phoneNumber}`}
-        />
-        <input
-          type="hidden"
-          name="countryCode"
-          value={selectedCountry.dialCode}
-        />
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+          <input
+            type="hidden"
+            name="countryCode"
+            value={selectedCountry.dialCode}
+          />
+          <div className="contact-field contact-message-field">
+            <label htmlFor="message">How can we help?</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us a little about the trip you have in mind..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   );
 };
