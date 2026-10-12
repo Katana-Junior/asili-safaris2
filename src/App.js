@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Events from "./pages/Events";
 import Contacts from "./pages/Contacts";
 import Footer from "./pages/components/Footer";
+import Bigfive from "./pages/Bigfive";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/villas" element={<Villas />} />
             <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/guides" element={<Guides />} />
+            <Route path="/bigfive" element={<Bigfive />} />
           </Routes>
           <Footer />
         </main>
