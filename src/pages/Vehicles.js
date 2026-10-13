@@ -9,7 +9,6 @@ const vehicles = [
     description:
       "A capable, comfortable choice for game drives and journeys across Kenya's varied terrain.",
     image:
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Safari Tour Van",
@@ -17,7 +16,6 @@ const vehicles = [
     description:
       "Enjoy a roomy ride with large windows for spotting wildlife along the way.",
     image:
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Private Transfer Vehicle",
@@ -25,7 +23,8 @@ const vehicles = [
     description:
       "Travel between the airport, your accommodation, and safari destinations with ease.",
     image:
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80",
+
+      
   },
   {
     name: "Group Safari Vehicle",
@@ -33,7 +32,6 @@ const vehicles = [
     description:
       "A practical option for group adventures, with space for passengers and safari essentials.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
