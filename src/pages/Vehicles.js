@@ -8,7 +8,7 @@ const vehicles = [
     capacity: "Up to 6 guests",
     description:
       "A capable, comfortable choice for game drives and journeys across Kenya's varied terrain.",
-    image:
+    image:"../Assets/cruiser.jpg"
   },
   {
     name: "Safari Tour Van",
@@ -31,7 +31,7 @@ const vehicles = [
     capacity: "Larger groups",
     description:
       "A practical option for group adventures, with space for passengers and safari essentials.",
-    image:
+    image:../Assets/cruiser.jpg
   },
 ];
 
