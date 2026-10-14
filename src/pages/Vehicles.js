@@ -8,30 +8,28 @@ const vehicles = [
     capacity: "Up to 6 guests",
     description:
       "A capable, comfortable choice for game drives and journeys across Kenya's varied terrain.",
-    image:"../Assets/cruiser.jpg"
+    image: images.cruiser,
   },
   {
     name: "Safari Tour Van",
     capacity: "Up to 7 guests",
     description:
       "Enjoy a roomy ride with large windows for spotting wildlife along the way.",
-    image:
+    image: images.jeep,
   },
   {
     name: "Private Transfer Vehicle",
     capacity: "Small groups",
     description:
       "Travel between the airport, your accommodation, and safari destinations with ease.",
-    image:
-
-      
+    image: images.transfer,
   },
   {
     name: "Group Safari Vehicle",
     capacity: "Larger groups",
     description:
       "A practical option for group adventures, with space for passengers and safari essentials.",
-    image:../Assets/cruiser.jpg
+    image: images.landcruiser,
   },
 ];
 
