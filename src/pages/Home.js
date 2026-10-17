@@ -4,6 +4,7 @@ import Villas from "./Villas";
 import Guides from "./Guides";
 import Vehicles from "./Vehicles";
 import Bigfive from "./Bigfive";
+import Comments from "./Comments";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <Guides />
       <Bigfive />
       <Vehicles />
+      <Comments />
     </div>
   );
 };
