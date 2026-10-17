@@ -1,3 +1,6 @@
+import React from "react";
+import "./styles/comments.css";
+
 const feedbacks = [
   {
     id: 1,
@@ -33,7 +36,7 @@ const feedbacks = [
 const Comments = () => {
   return (
     <section className="comments-section">
-      <h2 className="comments-title">What Our Guests Say</h2>
+      <h1 className="comments-title">"What Our Guests Say"</h1>
       <div className="comments-grid">
         {feedbacks.map((feedback) => (
           <article className="comment-card" key={feedback.id}>
