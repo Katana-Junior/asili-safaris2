@@ -1,35 +1,40 @@
 import React, { useState, useEffect } from "react";
 import "./styles/comments.css";
 import { FaQuoteLeft } from "react-icons/fa";
+import raymondImage from "./Assets/Raymond.jpg";
+import aishaImage from "./Assets/Aisha.avif";
+import johnImage from "./Assets/John.jpg";
+import sophiaImage from "./Assets/Sophia.jpg";
+import michaelImage from "./Assets/Michael.jpg";
 
 const feedbacks = [
   {
     id: 1,
-    image: "/Assets/user1.jpg",
+    image: raymondImage,
     name: "Raymond K.",
     comment: "Great safari experience!",
   },
   {
     id: 2,
-    image: "/Assets/user2.jpg",
+    image: aishaImage,
     name: "Aisha M.",
     comment: "The villas were amazing and the service was top-notch.",
   },
   {
     id: 3,
-    image: "/Assets/user3.jpg",
+    image: johnImage,
     name: "John D.",
     comment: "I loved the wildlife and the guides were very knowledgeable.",
   },
   {
     id: 4,
-    image: "/Assets/user4.jpg",
+    image: sophiaImage,
     name: "Sophia L.",
     comment: "A memorable experience with breathtaking views.",
   },
   {
     id: 5,
-    image: "/Assets/user5.jpg",
+    image: michaelImage,
     name: "Michael B.",
     comment: "The safari vehicles were comfortable and well-maintained.",
   },
