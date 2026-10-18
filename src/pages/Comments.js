@@ -2,23 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./styles/comments.css";
 import { FaQuoteLeft } from "react-icons/fa";
 
-const commentsSlider = () => {
-  const [currentIndex, setIndex] = useState(0);
-  const gotoSlide = (index) => {
-    setIndex(index);
-  };
-  const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % feedbacks.length);
-  };
-  const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + feedbacks.length) % feedbacks.length);
-  };
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
-
 const feedbacks = [
   {
     id: 1,
@@ -51,42 +34,69 @@ const feedbacks = [
     comment: "The safari vehicles were comfortable and well-maintained.",
   },
 ];
+
 const Comments = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const gotoSlide = (index) => {
+    setCurrentIndex((index + feedbacks.length) % feedbacks.length);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % feedbacks.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + feedbacks.length) % feedbacks.length
+    );
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const activeFeedback = feedbacks[currentIndex];
+
   return (
     <section className="comments-section">
       <h1 className="comments-title">What Our Guests Say</h1>
       <div className="comments-grid">
-        {feedbacks.map((feedback) => (
-          <article className="comment-card" key={feedback.id}>
-            <img
-              className="comment-image"
-              src={feedback.image}
-              alt={feedback.name}
-            />
-            <h3 className="comment-name">{feedback.name}</h3>
-            <p className="comment-text">
-              <FaQuoteLeft />
-              {feedback.comment}
-            </p>
-          </article>
-        ))}
+        <article className="comment-card" key={activeFeedback.id}>
+          <img
+            className="comment-image"
+            src={activeFeedback.image}
+            alt={activeFeedback.name}
+          />
+          <h3 className="comment-name">{activeFeedback.name}</h3>
+          <p className="comment-text">
+            <FaQuoteLeft />
+            {activeFeedback.comment}
+          </p>
+        </article>
       </div>
-      {/* Navigation Buttons */}
-        <button className="btn prev-btn" onClick={prevSlide}>&#10094;</button>
-        <button className="btn next-btn" onClick={nextSlide}>&#10095;</button>
 
-        {/* Indicators (Dots) */}
-        <div className="indicators">
-          {feedbacks.map((_, index) => (
-            <div 
-              key={index} 
-              className={`dot ${index === currentIndex ? 'active' : ''}`}
-              onClick={() => gotoSlide(index)}
-            />
-          ))}
-        </div>
+      <button className="btn prev-btn" onClick={prevSlide} aria-label="Previous testimonial">
+        &#10094;
+      </button>
+      <button className="btn next-btn" onClick={nextSlide} aria-label="Next testimonial">
+        &#10095;
+      </button>
+
+      <div className="indicators">
+        {feedbacks.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => gotoSlide(index)}
+            aria-label={`Go to testimonial ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
   );
 };
+
 export default Comments;
