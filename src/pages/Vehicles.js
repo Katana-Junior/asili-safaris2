@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/TravelCards.css";
+import landCruiserImage from "./Assets/landcruiser.jpg";
+import cruiserImage from "./Assets/cruiser.jpg";
+import JeepImage from "./Assets/Jeep.jpg";
+import transferImage from "./Assets/private.avif";
 
 const vehicles = [
   {
@@ -8,28 +12,28 @@ const vehicles = [
     capacity: "Up to 6 guests",
     description:
       "A capable, comfortable choice for game drives and journeys across Kenya's varied terrain.",
-    image: "/Assets/landcruiser.jpg",
+    image: landCruiserImage,
   },
   {
     name: "Safari Tour Van",
     capacity: "Up to 7 guests",
     description:
       "Enjoy a roomy ride with large windows for spotting wildlife along the way.",
-    image: "/Assets/jeep.jpg",
+    image: JeepImage,
   },
   {
     name: "Private Transfer Vehicle",
     capacity: "Small groups",
     description:
       "Travel between the airport, your accommodation, and safari destinations with ease.",
-    image: "/Assets/transfer.jpg",
+    image: transferImage,
   },
   {
     name: "Group Safari Vehicle",
     capacity: "Larger groups",
     description:
       "A practical option for group adventures, with space for passengers and safari essentials.",
-    image: "/Assets/landcruiser.jpg",
+    image: cruiserImage,
   },
 ];
 
