@@ -1,35 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/TravelCards.css";
+import KahindiImage from "./Assets/Kahindi.webp";
+import AbubakarImage from "./Assets/Abubakar.avif";
+import SafariImage from "./Assets/Safari.jpg";
+import KengaImage from "./Assets/Kenga.jpg";
 
 const guides = [
   {
-    name: "Wildlife Safari Guide",
-    location: "Maasai Mara",
+    name: "Kahindi S",
+    location: "Malindi",
     description:
-      "Make the most of every game drive with expert wildlife spotting and insight into the rhythms of the savannah.",
-    image: "guides coming soon",
+      "A knowledgeable guide who can provide insights into the local culture and wildlife of Malindi.",
+    image: KahindiImage,
   },
   {
-    name: "Birding Guide",
-    location: "Rift Valley Lakes",
+    name: "Abubakar J",
+    location: "Watamu",
     description:
-      "Discover Kenya's remarkable birdlife, from colourful resident species to seasonal visitors.",
-    image: "guides coming soon",
+      "Navigate the scenic coastline and hidden beaches with a guide who knows the best spots for snorkelling and swimming.",
+    image: AbubakarImage,
   },
   {
-    name: "Cultural Guide",
+    name: "Safari K",
     location: "Watamu & Malindi",
     description:
-      "Connect with local stories, traditions, and communities for a more meaningful journey.",
-    image: "guides coming soon",
+      "Experience the best of both worlds with a guide who knows the hidden gems of each location.",
+    image: SafariImage,
   },
   {
-    name: "Mountain Guide",
-    location: "Mount Kenya",
+    name: "Kenga M",
+    location: "Jacaranda",
     description:
-      "Explore highland trails at your pace with support for a memorable mountain adventure.",
-    image: "guides coming soon",
+      "Enjoy a safe and comfortable safari experience with a guide who prioritizes your well-being.",
+    image: KengaImage,
   },
 ];
 
