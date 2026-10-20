@@ -1,0 +1,9 @@
+.intro-text {
+  background-image: url(../Assets/about.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem;
+  height: 50vh;
+  width: 100%;
+  margin-top: 0;
+}
