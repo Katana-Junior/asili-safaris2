@@ -26,6 +26,7 @@ const Header = () => {
       <Link className="book-now-button" to="/contacts">
         Book Now
       </Link>
+      <p></p>
     </header>
   );
 };
