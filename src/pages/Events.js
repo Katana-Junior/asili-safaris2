@@ -6,7 +6,6 @@ const events = [
     date: "12-18 Aug 2026",
     location: "Masai Mara, Kenya",
     category: "Wildlife",
-    price: "$2,450",
     image:
       "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=900&q=80",
     description:
@@ -17,7 +16,6 @@ const events = [
     date: "02-05 Sep 2026",
     location: "Loitokitok, Kenya",
     category: "Culture",
-    price: "$980",
     image:
       "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80",
     description:
@@ -28,7 +26,6 @@ const events = [
     date: "Every Friday",
     location: "Samburu Conservancy",
     category: "Dining",
-    price: "$320",
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
     description:
@@ -39,7 +36,6 @@ const events = [
     date: "14-24 Oct 2026",
     location: "Kilimanjaro, Tanzania",
     category: "Adventure",
-    price: "$1,680",
     image:
       "https://images.unsplash.com/photo-1517630380772-8d3ffb55b5f8?auto=format&fit=crop&w=900&q=80",
     description:
@@ -50,7 +46,7 @@ const events = [
     date: "06-11 Nov 2026",
     location: "Diani Beach, Kenya",
     category: "Beach",
-    price: "$1,120",
+
     image:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
     description:
@@ -61,7 +57,7 @@ const events = [
     date: "18-21 Dec 2026",
     location: "Tsavo West, Kenya",
     category: "Family",
-    price: "$1,350",
+
     image:
       "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=900&q=80",
     description:
@@ -213,7 +209,8 @@ const Events = () => (
       <p className="events-eyebrow">Upcoming experiences</p>
       <h1 className="events-title">Events to inspire your next adventure</h1>
       <p className="events-subtitle">
-        Explore unforgettable moments, cultural journeys, and wildlife stories designed around the rhythm of East Africa.
+        Explore unforgettable moments, cultural journeys, and wildlife stories
+        designed around the rhythm of East Africa.
       </p>
     </header>
 
