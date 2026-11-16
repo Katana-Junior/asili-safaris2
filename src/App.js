@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Villas from "./pages/Villas";
 import Vehicles from "./pages/Vehicles";
 import Guides from "./pages/Guides";
-import About from "./pages/About";
+import About from "./pages/about";
 import Events from "./pages/Events";
 import Contacts from "./pages/Contacts";
 import Footer from "./pages/components/Footer";
