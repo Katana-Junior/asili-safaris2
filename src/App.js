@@ -7,7 +7,7 @@ import Vehicles from "./pages/Vehicles";
 import Guides from "./pages/Guides";
 import About from "./pages/about";
 import Events from "./pages/Events";
-import Contacts from "./pages/Contacts";
+import Contacts from "./pages/contacts";
 import Footer from "./pages/components/Footer";
 import Bigfive from "./pages/Bigfive";
 
